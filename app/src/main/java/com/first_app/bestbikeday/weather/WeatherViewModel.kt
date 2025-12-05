@@ -13,7 +13,7 @@ class WeatherViewModel : ViewModel() {
     private val _weatherForecast = MutableStateFlow<WeatherResponse?>(null)
     val weatherForecast: StateFlow<WeatherResponse?> = _weatherForecast
 
-    private val API_KEY = "0fa9c2f3782646368ab41413252808" // Replace with your actual API key
+    private val API_KEY = "008801018d9c4c27a6c163710251911" // Replace with your actual API key
 
     fun fetchWeatherForecast(location: String) {
         viewModelScope.launch {
